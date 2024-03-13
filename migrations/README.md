@@ -16,7 +16,7 @@ Migrations were pulled (in order) from:
 1. [init-scripts/postgres](https://github.com/supabase/infrastructure/tree/develop/init-scripts/postgres) => [db/init-scripts](db/init-scripts)
 2. [init-scripts/migrations](https://github.com/supabase/infrastructure/tree/develop/init-scripts/migrations) => [db/migrations](db/migrations)
 
-For compatibility with hosted projects, we include [migrate.sh](migrate.sh) that executes migrations in the same order as ami build:
+For compatibility with hosted projects, we include [migrate.sh](db/migrate.sh) that executes migrations in the same order as ami build:
 
 1. Run all `db/init-scripts` with `postgres` superuser role.
 2. Run all `db/migrations` with `supabase_admin` superuser role.
